@@ -1,0 +1,4 @@
+[
+  { "caption": "Mina: deploy", "command": "mina_deploy" },
+  { "caption": "Mina: tasks", "command": "mina_tasks" }
+]
