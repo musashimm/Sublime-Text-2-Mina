@@ -1,7 +1,8 @@
 [
   {"caption": "Mina: deploy", "command": "mina_deploy"},
   {"caption": "Mina: tasks", "command": "mina_tasks"},
-  {"caption": "Mina: init", "command": "mina_init"},
   {"caption": "Mina: setup", "command": "mina_setup"},
-  {"caption": "Mina: cleanup", "command": "mina_cleanup"}
+  {"caption": "Mina: cleanup", "command": "mina_cleanup"},
+  {"caption":"-"},
+  {"caption": "Mina configuration", "command": "mina_configuration"}
 ]

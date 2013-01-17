@@ -1,0 +1,9 @@
+{
+  // By default Mina configuration is kept in <project_dir>/config/deploy.rb file
+  
+  // Directory where deploy configuration is kept
+  "mina_deploy_config_dir": "config",
+
+  // File where deploy configuration is kept
+  "mina_deploy_config_file": "deploy.rb"
+}
