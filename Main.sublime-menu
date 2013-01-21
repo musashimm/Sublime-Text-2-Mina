@@ -7,12 +7,13 @@
       "caption": "Mina",
       "children":
       [  
-        {"caption": "Mina: deploy", "command": "mina_deploy"},
-        {"caption": "Mina: tasks", "command": "mina_tasks"},
-        {"caption": "Mina: setup", "command": "mina_setup"},
-        {"caption": "Mina: cleanup", "command": "mina_cleanup"},
+        {"caption": "Mina: Deploy", "command": "mina_deploy"},
         {"caption": "-"},
-        {"caption": "Mina configuration", "command": "mina_configuration"}
+        {"caption": "Mina: Cleanup", "command": "mina_cleanup"},
+        {"caption": "Mina: Setup", "command": "mina_setup"},
+        {"caption": "Mina: Tasks", "command": "mina_tasks"},
+        {"caption": "-"},
+        {"caption": "Mina: Configuration file", "command": "mina_configuration"}
       ]
     }
     ]
