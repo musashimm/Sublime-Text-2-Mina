@@ -1,8 +1,12 @@
 [
-  {"caption": "Mina: deploy", "command": "mina_deploy"},
-  {"caption": "Mina: tasks", "command": "mina_tasks"},
-  {"caption": "Mina: setup", "command": "mina_setup"},
-  {"caption": "Mina: cleanup", "command": "mina_cleanup"},
-  {"caption":"-"},
-  {"caption": "Mina configuration", "command": "mina_configuration"}
+  {"caption": "Mina: Deploy", "command": "mina_deploy"},
+  {"caption": "Mina: Restart", "command": "mina_restart"},
+  {"caption": "Mina: Custom Assets", "command": "mina_custom_assets"},
+  {"caption": "Mina: Custom Config", "command": "mina_custom_config"},
+  {"caption": "Mina: Custom Sync", "command": "mina_custom_sync"},
+  {"caption": "Mina: Customize", "command": "mina_customize"},
+  {"caption": "Mina: Configuration file", "command": "mina_configuration"},
+  {"caption": "Mina: Tasks", "command": "mina_tasks"},
+  {"caption": "Mina: Cleanup", "command": "mina_cleanup"},
+  {"caption": "Mina: Setup", "command": "mina_setup"}
 ]

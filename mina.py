@@ -28,6 +28,9 @@ class MinaBase(sublime_plugin.TextCommand):
         return root
 
     def run_shell_command(self, command, working_dir):
+        self.panel = self.view.window().get_output_panel("exec")
+        self.panel.settings().set("syntax", "Packages/Mina/MinaConsole.tmLanguage")
+        self.panel.settings().set("color_scheme", "Packages/Mina/MinaConsole.tmTheme")
         self.view.window().run_command("exec", {
             "cmd": [command],
             "shell": True,
@@ -62,22 +65,37 @@ class MinaTasksCommand(MinaTask):
     def run(self, edit):
         self.run_task("mina tasks")
 
+class MinaRestartCommand(MinaTask):
+    def run(self, edit):
+        self.run_task("mina restart")
 
 class MinaDeployCommand(MinaTask):
     def run(self, edit):
         self.run_task("mina deploy")
 
-
 class MinaSetupCommand(MinaTask):
     def run(self, edit):
         self.run_task("mina setup")
 
-
 class MinaCleanupCommand(MinaTask):
     def run(self, edit):
-        self.run_task("mina cleanup")
-
+        self.run_task("mina deploy:cleanup")
 
 class MinaConfigurationCommand(MinaTask):
     def run(self, edit):
         self.run_task("mina configuration")
+
+# Custom tasks
+
+class MinaCustomAssetsCommand(MinaTask):
+    def run(self, edit):
+        self.run_task("mina custom_assets")
+
+class MinaCustomConfigCommand(MinaTask):
+    def run(self, edit):
+        self.run_task("mina custom_config")
+
+class MinaCustomSyncCommand(MinaTask):
+    def run(self, edit):
+        self.run_task("mina custom_sync")
+

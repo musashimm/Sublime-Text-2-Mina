@@ -12,3 +12,28 @@ Installation
 ------------
 
 Clone repository to Your Sublime Package directory or use [Sublime Packege Control ](http://wbond.net/sublime_packages/package_control).
+
+Custom tasks
+------------
+
+To use custom task you must define them like so:
+
+```ruby
+desc "Custom Assets."
+task :custom_assets do
+  system "scp my_assets/* #{deploy_to}/#{current_path}/assets/"
+end
+```
+
+Custom assets are helpful for example to override some configuration or specific files.
+
+Specic config
+-------------
+
+In _deploy.rb_ file use:
+
+```ruby
+set :term_mode, nil
+```
+
+to have cleaner panel output.

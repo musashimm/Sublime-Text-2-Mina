@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>bundleUUID</key>
+  <string>72174d10-bb12-11e0-962b-112233445577</string>
+  <key>name</key>
+  <string>MinaConsole</string>
+  <key>patterns</key>
+  <array>
+    <dict>
+      <key>comment</key>
+      <string>success</string>
+      <key>match</key>
+      <string>^.*(Done. Deployed).*$</string>
+      <key>name</key>
+      <string>mina.success</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>task info</string>
+      <key>match</key>
+      <string>----->.+</string>
+      <key>name</key>
+      <string>mina.taskinfo</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>to hide</string>
+      <key>match</key>
+      <string>Pseudo.+</string>
+      <key>name</key>
+      <string>mina.to_hide</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>error</string>
+      <key>match</key>
+      <string>^.*(aborted|Don't).*$</string>
+      <key>name</key>
+      <string>mina.error</string>
+    </dict>
+  </array>
+  <key>scopeName</key>
+  <string>text.mina</string>
+  <key>uuid</key>
+  <string>72174d10-bb12-11e0-962b-112233445577</string>
+</dict>
+</plist>
